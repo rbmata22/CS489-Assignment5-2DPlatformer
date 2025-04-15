@@ -7,7 +7,6 @@ local hudFont = love.graphics.newFont("fonts/Abaddon Bold.ttf",16)
 
 local Enemy = Class{}
 function Enemy:init()
-
     self.x = 0
     self.y = 0
     self.name = ""
@@ -25,7 +24,7 @@ function Enemy:init()
     self.died = false
     self.score = 100 -- score to kill this mob
     -- Tweening
-    self.damageY = self.y -- y-value for tweening
+    self.damageY = self.y -- y-value for tweening animation
     self.damageTweenLevel = nil -- tween for damage text animation
     self.damageOnDisplay = false -- indicates when damage should be displayed
 end
