@@ -126,7 +126,7 @@ end
 function Enemy:takingDamage()
     self.damageY = self.y -- current location of enemy
     self.damageOnDisplay = true -- display damage
-    self.damageTweenLevel = Tween.new(1.5, self, {damageY = self.y-20}, "outBounce") -- tween level up from middle of enemy
+    self.damageTweenLevel = Tween.new(1.5, self, {damageY = self.y-20}, "outBounce") -- tween damage up from middle of enemy
 end
 
 return Enemy
